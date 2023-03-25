@@ -1,0 +1,8 @@
+HOWTO
+deploy
+*.pid
+output
+*.pyc
+.idea
+
+env/

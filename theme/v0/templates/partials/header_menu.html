@@ -1,0 +1,45 @@
+<a id="icon-menu">
+    <li>
+        <i class="fa-sharp fa-regular fa-bars" alt="Menu" title="Menu"></i>
+    </li>
+</a>
+
+{% for title, url in MENUITEMS %}
+    <a href="{{SITEURL}}/{{ url }}"
+       class="op-first-menu"
+       target="_parent"
+       style="text-decoration: none;"
+       itemprop="url" rel="bookmark">
+        <li>{{ title }}</li>
+    </a>
+{% endfor %}
+
+{% if DISPLAY_PAGES_ON_MENU != False %}
+    {% for page in pages %}
+        <a href="{{SITEURL}}/{{ page.url }}"
+           class="op-first-menu"
+           target="_parent"
+           style="text-decoration: none;"
+           itemprop="url" rel="bookmark">
+            <li>{{ page.title }}</li>
+        </a>
+    {% endfor %}
+{% endif %}
+
+{% if ARCHIVES_SAVE_AS %}
+    <a href="{{SITEURL}}/{{ ARCHIVES_URL | default('archives.html') }}"
+       class="op-first-menu"
+       target="_parent"
+       style="text-decoration: none;"
+       itemprop="url" rel="bookmark">
+        Arquivo
+    </a>
+{% endif %}
+
+{% if FEED_RSS or FEED_ATOM %}
+    <a class="op-first-menu"
+       href="{{ SITEURL }}/{{ FEED_RSS if FEED_RSS else FEED_ATOM }}"
+       title="{{ 'RSS' if FEED_RSS else 'Atom' }}" itemprop="url" style="text-decoration: none;">
+        {{ 'RSS' if FEED_RSS else 'Atom' }}
+    </a>
+{% endif %}
