@@ -34,19 +34,18 @@
 <header>
     <div id="logo-header">
         <a href="." rel="bookmark" title="Geração H2V">
-            <img src="./theme/img/logo.png"
+            <img src="./images/logo.png"
                     class="img-fluid"
                     alt="H2 verde para todos"
-                    width="67"
-                    style="display: flex;"/>
+                    width="150"
+                    style="display: flex; min-width: 5rem"/>
         </a>
     </div>
-        <div>
-            <form action="./search.html">
-                <input class="txt-email" type="text" name="q" id="tipue_search_input" aria-describedby="button-addon2" autocomplete="off">
+        <!--<a>
+            <li>
                 <i class="fa-sharp fa-regular fa-magnifying-glass" alt="Pesquisar" title="Pesquisar"></i>
-            </form>
-        </div>
+            </li>
+        </a>-->
     <nav itemtype="http://schema.org/SiteNavigationElement" aria-label="Header navigation">
         <ul class="first-menu">
 <a id="icon-menu">
@@ -55,19 +54,19 @@
     </li>
 </a>
 
+    <a href="./sobre.html"
+       class="op-first-menu"
+       target="_parent"
+       style="text-decoration: none;"
+       itemprop="url" rel="bookmark">
+        <li>Sobre Nós</li>
+    </a>
     <a href="./mentorias.html"
        class="op-first-menu"
        target="_parent"
        style="text-decoration: none;"
        itemprop="url" rel="bookmark">
         <li>Mentorias</li>
-    </a>
-    <a href="./calendario.html"
-       class="op-first-menu"
-       target="_parent"
-       style="text-decoration: none;"
-       itemprop="url" rel="bookmark">
-        <li>Calendário</li>
     </a>
     <a href="./cursos.html"
        class="op-first-menu"
@@ -76,19 +75,19 @@
        itemprop="url" rel="bookmark">
         <li>Cursos</li>
     </a>
-    <a href="./sobre.html"
-       class="op-first-menu"
-       target="_parent"
-       style="text-decoration: none;"
-       itemprop="url" rel="bookmark">
-        <li>Sobre Nós</li>
-    </a>
     <a href="./parceiros.html"
        class="op-first-menu"
        target="_parent"
        style="text-decoration: none;"
        itemprop="url" rel="bookmark">
         <li>Parceiros</li>
+    </a>
+    <a href="./calendario.html"
+       class="op-first-menu"
+       target="_parent"
+       style="text-decoration: none;"
+       itemprop="url" rel="bookmark">
+        <li>Calendário</li>
     </a>
     <a href="./vagas.html"
        class="op-first-menu"
@@ -108,15 +107,15 @@
 <br/>
 <br/>
 
-  <a href="./mentorias.html" target="_parent">
-      <span class="text-op">Mentorias</span>
+  <a href="./sobre.html" target="_parent">
+      <span class="text-op">Sobre Nós</span>
   </a>
   <div class="linha">
       <div class="circle-green-menu"></div>
       <span class="line-green-menu"></span>
   </div>
-  <a href="./calendario.html" target="_parent">
-      <span class="text-op">Calendário</span>
+  <a href="./mentorias.html" target="_parent">
+      <span class="text-op">Mentorias</span>
   </a>
   <div class="linha">
       <div class="circle-green-menu"></div>
@@ -129,15 +128,15 @@
       <div class="circle-green-menu"></div>
       <span class="line-green-menu"></span>
   </div>
-  <a href="./sobre.html" target="_parent">
-      <span class="text-op">Sobre Nós</span>
+  <a href="./parceiros.html" target="_parent">
+      <span class="text-op">Parceiros</span>
   </a>
   <div class="linha">
       <div class="circle-green-menu"></div>
       <span class="line-green-menu"></span>
   </div>
-  <a href="./parceiros.html" target="_parent">
-      <span class="text-op">Parceiros</span>
+  <a href="./calendario.html" target="_parent">
+      <span class="text-op">Calendário</span>
   </a>
   <div class="linha">
       <div class="circle-green-menu"></div>
@@ -153,11 +152,21 @@
         </div>
     </nav>
 </header>
-<div>
-  Esta é a página Cursos</title>
-</div>
+<main>
+    <section id="section1" class="section-1-cursos">
+        <label id="title-parceiros">CURSOS</label>
+    </section>
+    <section id="section2-calendario" data-aos="fade-up" data-aos-delay="150">
+        <br/>
+        <br/>
+        <p style="text-align: center;">
+            Aqui você encontra cursos de capacitação e especialização na cadeia do Hidrogênio Verde.
+        </p>
+        <p>Em breve.</p>
+    </section>
+</main>
 <footer>
-    <p>
+    <!--<p>
         Cadastre-se para receber as novidades
     </p>
     <div class="input-group mb-3 form-news">
@@ -165,7 +174,7 @@
         <div class="input-group-append" id="btn-cadastrar">
             <button class="btn-footer" type="button" id="button-addon2">CADASTRAR</button>
         </div>
-    </div>
+    </div>-->
     <div id="social-media">
             <a href=" https://linkedin.com/company/geracaoh2v " itemprop="url" rel="bookmark">
                <i class="fa-brands fa-linkedin" alt="linkedin" title="linkedin"

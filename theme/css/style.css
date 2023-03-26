@@ -1,6 +1,9 @@
 /* MEDIAS */
+body{
+    padding-top: 1rem;
+}
 @media screen and (max-width: 576px) {  /*576px ou menos*/
-    #section2, #section3, #section4, #section5, #section2-sobre, #section3-sobre {
+    #section2, #section3, #section4, #section5, #section2-sobre, #section3-sobre, .section-model {
         padding: 20px 3rem;
     }
 
@@ -14,7 +17,7 @@
         color: #000000;
         margin-bottom: 2rem;
     }
-
+    
     .op-first-menu {
         display: none;
     }
@@ -120,10 +123,18 @@
         width: 100vw;
         color: #FFFFFF;
     }
-
+    
     .h2-green {
         font-size: 3.5rem;
         line-height: 4.5rem;
+        color: #88D012;
+        font-weight: 700;
+        align-items: top;
+    }
+
+    .h3-green {
+        font-size: 2.3rem;
+        line-height: 2.8rem;
         color: #88D012;
         font-weight: 700;
         align-items: top;
@@ -164,38 +175,27 @@
         left: 0;
         font-weight: 700;
         color: #FFFFFF;
-        z-index: 0;
         width: 100%;
     }
 
     .section-1-parceiros {
-        width: 100%;
         height: 15rem;
-        background-image: url('../img/parceiros/partner_header_2.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
     }
 
     .section-1-calendario {
-        width: 100%;
         height: 15rem;
-        background-image: url('../img/calendario/banner-calendario.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
         line-height: 3.5rem;
     }    
 
-    #section2-calendario {
+    .section-1-mentorias {
+        height: 15rem;
+    }
+
+    .section-1-cursos {
+        height: 15rem;
+    }
+
+    #section2-calendario, #section3-calendario {
         padding: 0 6rem;
     }
 
@@ -203,7 +203,7 @@
         padding: 0.3rem 3em;
     }
 
-    .dropdown {
+    .dropdown-new, .dropdown-2 {
         margin-top: 15px;
     }
 
@@ -216,13 +216,44 @@
         height: 15rem;
     }
 
+    .section-1-vagas {
+        height: 15rem;
+    }
+
     .sub-title-orange {
         font-size: 2rem;
+    }
+
+    .card-perfil {
+        width: 30vw;
+    }
+    
+    .card-title-2 {
+        width: 60vw;
+    }
+
+    .parte1 {
+        text-align: left;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+
+    .parte2 {
+        text-align: center;
+        padding: 0 0 3rem 0;
+    }
+
+    .section-middle {
+        display: block;
+    }
+
+    .txt-form-2, .dropdown-2 {
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 991px) { /*de 576px a 991px*/
-    #section2, #section3, #section4, #section5, #section2-sobre, #section3-sobre  {
+    #section2, #section3, #section4, #section5, #section2-sobre, #section3-sobre, .section-model  {
         padding: 20px 3rem;
     }
 
@@ -352,6 +383,14 @@
         font-weight: 700;
         align-items: top;
     }
+
+    .h3-green {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+        color: #88D012;
+        font-weight: 700;
+        align-items: top;
+    }
     
     #sub-section5 {
         display: flex;
@@ -393,33 +432,23 @@
     }
 
     .section-1-parceiros {
-        width: 100%;
         height: 20rem;
-        background-image: url('../img/parceiros/partner_header_2.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
     }
 
     .section-1-calendario {
-        width: 100%;
         height: 20rem;
-        background-image: url('../img/calendario/banner-calendario.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
         line-height: 4.5rem;
     }
 
-    #section2-calendario {
+    .section-1-mentorias {
+        height: 20rem;
+    }
+
+    .section-1-cursos {
+        height: 20rem;
+    }
+
+    #section2-calendario, #section3-calendario {
         padding: 0 6rem;
     }
 
@@ -427,7 +456,7 @@
         padding: 0.3rem 3em;
     }
 
-    .dropdown {
+    .dropdown-new, .dropdown-2 {
         margin-top: 15px;
     }
 
@@ -440,13 +469,59 @@
         height: 20rem;
     }
 
+    .section-1-vagas {
+        height: 20rem;
+    }
+
     .sub-title-orange {
         font-size: 2.5rem;
+    }
+
+    .card-perfil {
+        width: 20vw;
+    }
+    
+    .card-title-2 {
+        width: 60vw;
+    }
+
+    .contact-mentorias {
+        width: 40vw;
+    }
+
+    .form-mentorias {
+        width: 60vw;
+        text-align: right;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .parte1 {
+        text-align: left;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+
+    .parte2 {
+        text-align: right;
+        padding: 0 0 3rem 0;
+        box-sizing: border-box;
+    }
+    
+    .section-middle {
+        display: block;
+    }
+
+    .txt-form-2, .dropdown-2 {
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) { /*de 992px a 1199px*/ 
-    #section2, #section3, #section4, #section5, #section2-sobre, #section3-sobre  {
+    #section2, #section3, #section4, #section5, #section2-sobre, #section3-sobre, .section-model  {
         padding: 20px 10rem;
     }
 
@@ -572,6 +647,14 @@
         font-weight: 700;
         align-items: top;
     }
+
+    .h3-green {
+        font-size: 2.5rem;
+        line-height: 6rem;
+        color: #88D012;
+        font-weight: 700;
+        align-items: top;
+    }
     
     #img-women-mobile {
         display: none;
@@ -603,33 +686,23 @@
     }
 
     .section-1-parceiros {
-        width: 100%;
         height: 27rem;
-        background-image: url('../img/parceiros/partner_header_2.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
     }
 
     .section-1-calendario {
-        width: 100%;
         height: 27rem;
-        background-image: url('../img/calendario/banner-calendario.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
         line-height: 6rem;
     }
 
-    #section2-calendario {
+    .section-1-mentorias {
+        height: 27rem;
+    }
+
+    .section-1-cursos {
+        height: 27rem;
+    }
+
+    #section2-calendario, #section3-calendario {
         padding: 0 5rem;
     }
 
@@ -646,13 +719,67 @@
         height: 27rem;
     }
 
+    .section-1-vagas {
+        height: 27rem;
+    }
+
     .sub-title-orange {
         font-size: 2.6rem;
+    }
+
+    .card-perfil {
+        width: 50vw;
+        background-color: pink;
+    }
+    
+    .card-title-2 {
+        width: 50vw;
+    }
+
+    .contact-mentorias {
+        width: 40vw;
+    }
+
+    .form-mentorias {
+        width: 60vw;
+        text-align: right;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .parte1 {
+        width: 50vw;
+        text-align: left;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+
+    .parte2 {
+        width: 50vw;
+        text-align: right;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+
+    .section-middle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-new, .dropdown-2 {
+        margin-top: 15px;
+    }
+
+    .txt-form-2, .dropdown-2 {
+        width: 90%;
     }
 }
 
 @media screen and (min-width: 1200px) { /* 1200px ou mais */
-    #section2, #section3, #section4, #section5, #section2-sobre, #section3-sobre  {
+    #section2, #section3, #section4, #section5, #section2-sobre, #section3-sobre, .section-model  {
         padding: 20px 10rem;
     }
 
@@ -688,7 +815,6 @@
     nav {
         width: 75%;
     }
-
 
     /* Sections */
 
@@ -779,6 +905,14 @@
         font-weight: 700;
         align-items: top;
     }
+
+    .h3-green {
+        font-size: 3rem;
+        line-height: 6rem;
+        color: #88D012;
+        font-weight: 700;
+        align-items: top;
+    }
     
     #img-women-mobile {
         display: none;
@@ -804,38 +938,27 @@
         left: 0;
         font-weight: 700;
         color: #FFFFFF;
-        z-index: 0;
         width: 100%;
     }
 
     .section-1-parceiros {
-        width: 100%;
         height: 31rem;
-        background-image: url('../img/parceiros/partner_header_2.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
     }
 
     .section-1-calendario {
-        width: 100%;
         height: 31rem;
-        background-image: url('../img/calendario/banner-calendario.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
         line-height: 7rem;
     }
 
-    #section2-calendario {
+    .section-1-mentorias {
+        height: 31rem;
+    }
+
+    .section-1-cursos {
+        height: 31rem;
+    }
+
+    #section2-calendario, #section3-calendario {
         padding: 0 8rem;
     }
 
@@ -852,8 +975,61 @@
         height: 31rem;
     }
 
+    .section-1-vagas {
+        height: 31rem;
+    }
+
     .sub-title-orange {
         font-size: 3rem;
+    }
+
+    .card-perfil {
+        width: 50vw;
+    }
+    
+    .card-title-2 {
+        width: 50vw;
+    }
+
+    .contact-mentorias {
+        width: 40vw;
+    }
+
+    .form-mentorias {
+        width: 50vw;
+        text-align: right;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .parte1 {
+        width: 40vw;
+        text-align: left;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+
+    .parte2 {
+        width: 40vw;
+        text-align: right;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+
+    .section-middle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropdown-new, .dropdown-2 {
+        margin-top: 15px;
+    }   
+
+    .txt-form-2, .dropdown-2 {
+        width: 80%;
     }
 }
 
@@ -890,45 +1066,30 @@
         left: 0;
         font-weight: 700;
         color: #FFFFFF;
-        z-index: 0;
         width: 100%;
     }
 
     .section-1-parceiros {
-        width: 100%;
         height: 35rem;
-        background-image: url('../img/parceiros/partner_header_2.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
     }
 
     .section-2-calendario {
-        width: 100%;
         height: 35rem;
-        background-image: url('../img/calendario/banner-calendario.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
         line-height: 8rem;
     }
 
-    #section2-calendario {
+    .section-1-mentorias {
+        height: 35rem;
+    }
+
+    #section2-calendario, #section3-calendario {
         padding: 0 15rem;
     }
 
     .btn-card {
         padding: 0.3rem 3em;
     }
-
+    
     #title-sobre {
         font-size: 6rem;
         margin-left: 15rem;
@@ -936,6 +1097,52 @@
 
     .section-1-sobre {
         height: 35rem;
+    }
+
+    .section-1-calendario {
+        height: 31rem;
+        line-height: 7rem;
+    }
+
+    .section-1-vagas {
+        height: 35rem;
+    }
+
+    .contact-mentorias {
+        width: 40vw;
+    }
+
+    .form-mentorias {
+        width: 50vw;
+        text-align: right;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .parte1 {
+        width: 50vw;
+        text-align: left;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+
+    .parte2 {
+        width: 50vw;
+        text-align: right;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+
+    .section-middle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .txt-form-2, .dropdown-2 {
+        width: 80%;
     }
 }
 
@@ -953,7 +1160,6 @@
     }
 
     #title-parceiros {
-        position: absolute;
         font-size: 8rem;
         left: 0;
         margin: 0 auto;
@@ -990,7 +1196,24 @@
         line-height: 9rem;
     }
 
-    #section2-calendario {
+    .section-1-mentorias {
+        width: 100%;
+        height: 42rem;
+        background-image: url('../img/mentorias/banner-mentorias.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-1-cursos {
+        height: 42rem;
+    }
+
+    #section2-calendario, #section3-calendario {
         padding: 0 15rem;
     }
 
@@ -1001,6 +1224,37 @@
 
     .section-1-sobre {
         height: 37rem;
+    }
+
+    .section-1-vagas {
+        height: 42rem;
+    }
+
+    .card-perfil {
+        width: 40vw;
+    }
+    
+    .card-title-2 {
+        width: 60vw;
+    }
+
+    .parte1 {
+        width: 50vw;
+        text-align: left;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+
+    .parte2 {
+        width: 50vw;
+        text-align: right;
+        padding: 3rem 0;
+        box-sizing: border-box;
+    }
+    
+    .section-middle {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -1355,14 +1609,14 @@ footer h3 {
     justify-content: space-between;
 }
 
-#card-title {
+.card-title {
     width: 70vw;
     font-weight: 700;
     font-size: 1.6rem;
     margin: auto 0;
 }
 
-#card-date {
+.card-date {
     width: 30vw;
     font-weight: 700;
     font-size: 2rem;
@@ -1370,23 +1624,23 @@ footer h3 {
     line-height: 1.8rem;
 }
 
-#card-date strong {
+.card-date strong {
     font-size: 2.3rem;
 }
 
-#card-infos {
+.card-infos {
     font-size: 1.3rem;
     line-height: 1.8rem;
     margin-top: 5px;
 }
 
-#card-description {
+.card-description {
     line-height: 1.4rem;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
-#card-button {
+.card-button {
     text-align: center;
 }
 
@@ -1396,7 +1650,26 @@ footer h3 {
     border-radius: 20px;
 }
 
-.dropdown {
+.card-new-header-2 {
+    display: flex;
+    justify-content: space-between;
+    height: 14rem;
+}
+
+.card-title-2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: auto 0;
+    text-align: left;
+}
+
+.card-perfil {
+    font-weight: 700;
+    text-align: center;
+    margin: auto 0;
+}
+
+.dropdown-new {
     background-color: #D9D9D9;
     color: #000000;
     width: 100%;
@@ -1404,6 +1677,16 @@ footer h3 {
     font-size: 1.4rem;
     border-radius: 10px;
     padding: 5px;
+    box-sizing: border-box;
+}
+
+.dropdown-2 {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 5px 17px;
     box-sizing: border-box;
 }
 
@@ -1438,4 +1721,166 @@ footer h3 {
 
 .sub-title-orange {
     color: #FF6501;
+}
+
+.txt-form {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    color: #000000;
+    margin-top: 10px;
+    width: 80%;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.txt-form-2 {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #000000;
+    margin-top: 10px;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.message {
+    height: 100px;
+}
+
+/* PAGE CURSOS */ 
+
+.section-1-cursos {
+    width: 100%;
+    background-image: url('../img/cursos/banner-cursos.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* PAGE PARCEIROS */ 
+
+.section-1-parceiros {
+    width: 100%;
+    background-image: url('../img/parceiros/partner_header_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* PAGE CALENDÁRIO */ 
+
+.section-1-calendario {
+    width: 100%;
+    background-image: url('../img/calendario/banner-calendario.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}    
+
+/* PAGE MENTORIAS */ 
+
+.section-1-mentorias {
+    width: 100%;
+    background-image: url('../img/mentorias/banner-mentorias.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* PAGE VAGAS */ 
+
+.section-1-vagas {
+    width: 100%;
+    background-image: url('../img/vagas/banner-vagas.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* PAGE CURSOS CARD */
+
+.card-curso {
+    background-color: #D9D9D9;
+    border: none;
+    color: #000000;
+    margin-top: 20px;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.card-curso-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-curso-date {
+    width: 30vw;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.8rem;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 10px 3px;
+    box-sizing: border-box;
+    color: #88D012;
+    height: max-content;
+}
+
+.card-curso-date strong {
+    font-size: 2.9rem;
+}
+
+.text-inicio {
+    font-size: 1.1rem;
+}
+
+.text-month {
+    font-size: 1.6rem;
+}
+
+.card-curso-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.card-curso-infos {
+    font-size: 1.3rem;
+    line-height: 0px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.card-curso-tag {
+    background-color: #A29F9F;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    padding: 0px 1.1rem;
 }
